@@ -1,12 +1,13 @@
 @import "./vendor/normalize.css";
 @import "./vendor/fonts";
 @import "./abstracts/variables";
-@import "./abstracts/mixins.scss";
+@import "./abstracts/mixins";
+@import "./blocks/body";
 @import "./blocks/header";
-@import "./blocks/main.scss";
+@import "./blocks/main";
 @import "./blocks/intro";
-@import "./blocks/team.scss";
+@import "./blocks/team";
 @import "./blocks/join-team";
-@import "./blocks/battles.scss";
-
-@import "./blocks/footer.scss";
+@import "./blocks/battles";
+@import "./blocks/footer";
+@import "./blocks/button.scss";

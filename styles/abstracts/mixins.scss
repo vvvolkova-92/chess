@@ -1,0 +1,29 @@
+@mixin block-title {
+  font: $text-title;
+  color: $color-text;
+}
+
+@mixin paragraph {
+  font: $text-paragraph;
+  color: $color-text;
+}
+
+@mixin name {
+  font: $text-name;
+  color: $color-text;
+  letter-spacing: 0.055em;
+  text-transform: uppercase;
+}
+
+@mixin text-btn {
+  font: $text-btn;
+  color: $color-text;
+  letter-spacing: 0.01em;
+}
+
+@mixin flex ($align: center, $justify: space-between) {
+  display: flex;
+  flex-direction: row;
+  justify-content: $justify;
+  align-items: $align;
+}

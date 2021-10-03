@@ -1,0 +1,31 @@
+.header {
+  @include flex;
+  min-height: 80px;
+  margin: 0 auto;
+  width: calc(100% - 40px);
+
+  &__logo{
+  background-image: url(../images/logo.svg);
+  width: 26px;
+  height: 36px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  }
+
+  &__text {
+    color: $color-text;
+    font: 400 13px/16px NotoSans;
+    letter-spacing: 0.01em;
+    display: none;
+  }
+
+  @media screen and (min-width: 768px) {
+
+    &__logo {
+      width: 38px;
+      height: 64px;
+    }
+  
+  }
+
+}
