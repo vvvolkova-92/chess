@@ -34,3 +34,22 @@
   justify-content: $justify;
   align-items: $align;
 }
+
+@mixin backgroung-img {
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@mixin intro-img {
+  @include backgroung-img;
+  background-image: url(../images/intro-image-320.svg);
+  
+  @media screen and (min-width: $tablet){
+    background-image: url(../images/intro-image-768.svg);
+  }
+
+  @media screen and (min-width: $laptop){
+    background-image: url(../images/intro-image-1024.svg);
+  }
+}
