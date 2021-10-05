@@ -8,6 +8,7 @@
   <meta name="keywords" content="увлечения,шахматы,вид спорта,шахматный клуб">
   <meta name="author" content="Vilo4ka">
   <link rel="stylesheet" href="./styles/styles.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
   <title>Шахматный клуб в Москве</title>
 </head>
 <body class="body">
@@ -26,10 +27,28 @@
       <p class="subtitle intro__subtitle">Приходите к нам, играть в шахматы! Сразитесь классическом поединке, блиц состязании и бою с гройсмейстером.</p>
       <div class="intro__board"></div>
     </section>
-    <section class="team"></section>
+    <section class="team">
+      <!-- слайдер -->
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="https://swiperjs.com/demos/images/nature-1.jpg" class="swiper-image"/>
+          </div>
+          <div class="swiper-slide">
+            <img src="https://swiperjs.com/demos/images/nature-2.jpg" class="swiper-image"/>
+          </div>
+          <div class="swiper-slide">
+            <img src="https://swiperjs.com/demos/images/nature-3.jpg" class="swiper-image"/>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
     <section class="join-team"></section>
     <section class="battles"></section>
   </main>
   <footer class="footer"></footer>
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <script src="./scripts/index.js"></script>
 </body>
 </html>

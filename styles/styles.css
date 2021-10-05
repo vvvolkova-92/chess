@@ -119,6 +119,10 @@
   }
 }
 
+.team {
+  position: relative;
+}
+
 .button {
   display: flex;
   flex-direction: row;
@@ -148,4 +152,22 @@
   color: #fff;
   margin: 0;
   grid-area: subtitle;
+}
+
+.swiper {
+  width: 280px;
+  height: 344px;
+  padding: 50px;
+}
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+}
+.swiper-image {
+  display: block;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }/*# sourceMappingURL=styles.css.map */
