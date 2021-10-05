@@ -1,0 +1,5 @@
+.subtitle {
+  @include paragraph;
+  margin: 0;
+  grid-area: subtitle;
+}

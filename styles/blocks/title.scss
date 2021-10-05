@@ -1,0 +1,5 @@
+.title {
+  @include block-title;
+  margin: 0;
+  grid-area: title;
+}

@@ -21,6 +21,13 @@
   letter-spacing: 0.01em;
 }
 
+@mixin text-label {
+  font: $text-label;
+  color: $color-text;
+  text-transform: uppercase;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
 @mixin flex ($align: center, $justify: space-between) {
   display: flex;
   flex-direction: row;
