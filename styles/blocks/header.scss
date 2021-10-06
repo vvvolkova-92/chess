@@ -1,8 +1,7 @@
 .header {
   @include flex;
+  @include widthpage;
   min-height: 80px;
-  margin: 0 auto;
-  width: calc(100% - 40px);
 
   &__logo{
   background-image: url(../images/logo.svg);

@@ -1,4 +1,5 @@
 .intro {
+  @include widthpage;
   padding: 43px 0 0 0;
   display: grid;
   align-items: center;
@@ -10,8 +11,6 @@
   "title title" 
   "subtitle subtitle" 
   "board board";
-  margin: 0 auto;
-  width: calc(100% - 40px);
 
   &__label {
     grid-area: label;

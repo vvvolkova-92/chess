@@ -1,5 +1,20 @@
 .team {
-  padding: 20px 0 0 0;
+  padding: 20px 0 78px 0;
   position: relative;
   background-color: $color-main;
+
+  &__container {
+    @include widthpage;
+  }
+
+  &__title {
+    min-width: 280px;
+    width: 100%;
+    margin: 20px 0 0 0;
+    word-wrap: break-word;
+  }
+
+  &__subtitle {
+    margin: 20px 0 0 0;
+  }
 }

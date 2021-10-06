@@ -1,3 +1,4 @@
+@import url(https://unpkg.com/swiper/swiper-bundle.min.css);
 @import "./vendor/normalize.css";
 @font-face {
   font-family: "NotoSans";
@@ -23,9 +24,9 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  min-height: 80px;
   margin: 0 auto;
   width: calc(100% - 40px);
+  min-height: 80px;
 }
 .header__logo {
   background-image: url(../images/logo.svg);
@@ -48,6 +49,8 @@
 }
 
 .intro {
+  margin: 0 auto;
+  width: calc(100% - 40px);
   padding: 43px 0 0 0;
   display: grid;
   align-items: center;
@@ -56,8 +59,6 @@
   grid-auto-rows: auto;
   grid-template-rows: repeat(auto-fill, minmax(60px, 1fr));
   grid-template-areas: "label image" "title title" "subtitle subtitle" "board board";
-  margin: 0 auto;
-  width: calc(100% - 40px);
 }
 .intro__label {
   grid-area: label;
@@ -120,9 +121,22 @@
 }
 
 .team {
-  padding: 20px 0 0 0;
+  padding: 20px 0 78px 0;
   position: relative;
   background-color: #5036E6;
+}
+.team__container {
+  margin: 0 auto;
+  width: calc(100% - 40px);
+}
+.team__title {
+  min-width: 280px;
+  width: 100%;
+  margin: 20px 0 0 0;
+  word-wrap: break-word;
+}
+.team__subtitle {
+  margin: 20px 0 0 0;
 }
 
 .button {
@@ -158,8 +172,8 @@
 
 .swiper {
   width: 280px;
-  height: 382px;
-  padding: 30px;
+  height: 344px;
+  padding: 60px 0 0 0;
 }
 .swiper-slide {
   background-position: center;
@@ -174,8 +188,26 @@
      object-fit: cover;
 }
 .swiper-pagination-bullet {
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: white;
 }
 .swiper-pagination-bullet-active {
   background-color: white;
+}
+.swiper-pagination-horizontal {
+  top: 412px;
+  bottom: 0;
+}
+.swiper__title {
+  font: 400 22px/29px NotoSans;
+  color: #fff;
+  letter-spacing: 0.055em;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 20px 0 0 0;
+}
+.swiper__subtitle {
+  font: 400 12px/16px NotoSans;
+  color: #fff;
+  text-align: center;
+  margin: 5px 0 0 0;
 }/*# sourceMappingURL=styles.css.map */

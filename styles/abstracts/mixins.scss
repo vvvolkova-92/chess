@@ -1,3 +1,8 @@
+@mixin widthpage{
+  margin: 0 auto;
+  width: calc(100% - 40px);
+}
+
 @mixin block-title {
   font: $text-title;
   color: $color-text;
@@ -19,6 +24,7 @@
   font: $text-btn;
   color: $color-text;
   letter-spacing: 0.01em;
+
 }
 
 @mixin text-label {
