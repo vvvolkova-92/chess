@@ -3,8 +3,10 @@
 @import "./vendor/fonts";
 @import "./abstracts/variables";
 @import "./abstracts/mixins";
+@import "./blocks/title";
+@import "./blocks/subtitle";
+@import "./blocks/board";
 @import "./blocks/body";
-@import "./blocks/header";
 @import "./blocks/main";
 @import "./blocks/intro";
 @import "./blocks/team";
@@ -12,6 +14,5 @@
 @import "./blocks/battles";
 @import "./blocks/footer";
 @import "./blocks/button";
-@import "./blocks/title";
-@import "./blocks/subtitle";
 @import "./blocks/swiper";
+@import "./blocks/logo";

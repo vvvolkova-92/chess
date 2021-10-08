@@ -1,0 +1,28 @@
+.join-team {
+  padding: 20px 0 0 0;
+  min-height: 344px;
+  @include flex;
+  flex-direction: column;
+  background-color: $color-main;
+
+  &__text-container{
+    @include widthpage;
+  }
+
+  &__title {
+    min-width: 280px;
+    width: 100%;
+    word-wrap: break-word;
+  }
+
+  &__subtitle {
+    margin: 20px 0 0 0;
+  }
+
+  &__image {
+    width: 100px;
+    min-width: 280px;
+    background-image: url(../images/join-image-320.svg);
+    min-height: 140px;
+  }
+}

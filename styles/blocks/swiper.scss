@@ -1,7 +1,5 @@
 .swiper {
-  width: 280px;
-  height: 344px;
-  padding: 60px 0 0 0;
+width: 280px;
 
   &-slide {
     background-position: center;
@@ -13,26 +11,36 @@
   &-image {
     display: block;
     width: 100%;
+    height: 100%;
     object-fit: cover;
+    object-position: top center;
+    filter: grayscale(100%);
+    border-radius: 15px;
   }
 
-  &-pagination-bullet {
-    background-color: rgb(255, 255, 255);
+  &__bullet {
+    @include bullet;
   }
   
-  &-pagination-bullet-active {
-    background-color: rgba(255, 255, 255, 1);
+  &__bullet-active {
+    @include bullet-active;
   }
   
-  &-pagination-horizontal {
-    top: 412px;
-    bottom: 0;
+  &__pagination {
+    transition: .3s opacity;
+    transform: translate3d(0,0,0);
+    z-index: 10;
+    width: 100%;
+    line-height: 0;
+    text-align: center;
+
   }
 
   &__title {
     @include name;
     text-align: center;
     margin: 20px 0 0 0;
+    z-index: 100;
   }
 
   &__subtitle {
@@ -40,4 +48,9 @@
     text-align: center;
     margin: 5px 0 0 0;
   }
+
+  &-image:hover {
+    filter: grayscale(0); 
+  }
+
 }

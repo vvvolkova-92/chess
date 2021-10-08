@@ -1,8 +1,12 @@
 .team {
-  padding: 20px 0 78px 0;
+  padding: 20px 0 0 0;
+  min-height: 642px;
   position: relative;
   background-color: $color-main;
 
+  &__swiper {
+    height: 344px;
+  }
   &__container {
     @include widthpage;
   }
@@ -10,11 +14,14 @@
   &__title {
     min-width: 280px;
     width: 100%;
-    margin: 20px 0 0 0;
     word-wrap: break-word;
   }
 
   &__subtitle {
     margin: 20px 0 0 0;
+  }
+
+  &__swiper {
+    margin: 60px 0 0 0;
   }
 }
