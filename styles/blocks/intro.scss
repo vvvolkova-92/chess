@@ -1,16 +1,31 @@
 .intro {
   @include widthpage;
-  padding: 43px 0 0 0;
+  padding: 19px 0 0 0;
   display: grid;
   align-items: center;
   justify-items: center;
   grid-template-columns: repeat(2, 1fr);
   grid-auto-rows: auto;
   grid-template-rows: repeat(auto-fill, minmax(60px, 1fr));
-  grid-template-areas: "label image" 
+  grid-template-areas: "header header"
+  "label image" 
   "title title" 
   "subtitle subtitle" 
   "board board";
+
+  &__header {
+    @include flex;
+    min-width: 280px;
+    margin: 0 0 43px 0;
+    grid-area: header;
+  }
+
+  &__header-text {
+    color: $color-text;
+    font: 400 13px/16px NotoSans;
+    letter-spacing: 0.01em;
+    display: none;
+  }
 
   &__label {
     grid-area: label;
@@ -34,13 +49,8 @@
   }
 
   &__board {
-    margin: 110px 0 0 0;
     grid-area: board;
-    min-width: 280px;
-    max-width: 416px;
-    min-height: 70px;
-    background-image: url(../images/square.svg);
-    background-repeat: repeat;
+    margin: 110px 0 20px 0;
   }
 
   &__title {

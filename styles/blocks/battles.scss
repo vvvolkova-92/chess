@@ -1,0 +1,28 @@
+.battles {
+  @include flex;
+  &__swiper {
+    height: 280px;
+  }
+  &__container {
+    @include widthpage;
+    @include flex;
+    flex-direction: column;
+    min-height: 652px;
+  }
+
+  &__board {
+    background-image: url(../images/square_green.svg);
+    margin: 0 0 20px 0;
+  }
+
+  &__title {
+    min-width: 280px;
+    width: 100%;
+    word-wrap: break-word;
+    margin: 20px 0 0 0;
+  }
+
+  &__subtitle {
+    margin: 20px 0 0 0;
+  }
+}

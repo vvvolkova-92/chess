@@ -13,6 +13,12 @@
   color: $color-text;
 }
 
+@mixin text-copy {
+  font: $text-copy;
+  color: #8E9199;
+  text-align: center;
+}
+
 @mixin name {
   font: $text-name;
   color: $color-text;
@@ -47,6 +53,29 @@
   background-repeat: no-repeat;
 }
 
+@mixin bullet {
+  background-origin: padding-box;
+  cursor: pointer;
+  display: inline-block;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+  width: 8px;
+  height: 8px;
+  margin: 30px 5px 0 5px;
+}
+
+@mixin bullet-active {
+  background-color: rgba(255, 255, 255, 1);
+}
+
+@mixin board {
+
+  min-width: 280px;
+  max-width: 416px;
+  min-height: 70px;
+  background-repeat: repeat;
+  background-image: url(../images/square.svg);
+}
 @mixin intro-img {
   @include backgroung-img;
   background-image: url(../images/intro-image-320.svg);
