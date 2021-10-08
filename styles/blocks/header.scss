@@ -1,0 +1,30 @@
+.header {
+  @include flex;
+  @include widthpage;
+  min-height: 80px;
+
+  &__logo{
+  background-image: url(../images/logo.svg);
+  width: 26px;
+  height: 36px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  }
+
+  &__text {
+    color: $color-text;
+    font: 400 13px/16px NotoSans;
+    letter-spacing: 0.01em;
+    display: none;
+  }
+
+  @media screen and (min-width: $tablet) {
+
+    &__logo {
+      width: 38px;
+      height: 64px;
+    }
+  
+  }
+
+}

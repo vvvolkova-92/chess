@@ -1,19 +1,19 @@
 /*
 Error: Undefined mixin 'flex'.
-        on line 2 of /Users/violettavolkova/Praktik/chess/styles/blocks/header.scss, in `flex'
-        from line 2 of /Users/violettavolkova/Praktik/chess/styles/blocks/header.scss
+        on line 2 of /Users/violettavolkova/Praktik/chess/styles/blocks/button.scss, in `flex'
+        from line 2 of /Users/violettavolkova/Praktik/chess/styles/blocks/button.scss
 
-1: .header {
-2:   @include flex;
-3:   @include widthpage;
-4:   min-height: 80px;
-5: 
-6:   &__logo{
-7:   background-image: url(../images/logo.svg);
+1: .button {
+2:   @include flex(center, center);
+3:   @include text-btn;
+4:   box-sizing: border-box;
+5:   color: $color-text;
+6:   background-color: $color-secondary;
+7:   width: 140px;
 
 Backtrace:
-/Users/violettavolkova/Praktik/chess/styles/blocks/header.scss:2:in `flex'
-/Users/violettavolkova/Praktik/chess/styles/blocks/header.scss:2
+/Users/violettavolkova/Praktik/chess/styles/blocks/button.scss:2:in `flex'
+/Users/violettavolkova/Praktik/chess/styles/blocks/button.scss:2
 /private/var/folders/gv/4_5p89ws5mqfpj074nbw7fzc0000gn/T/AppTranslocation/C553764E-78C3-4A05-B22A-36450DC4086B/d/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
 /private/var/folders/gv/4_5p89ws5mqfpj074nbw7fzc0000gn/T/AppTranslocation/C553764E-78C3-4A05-B22A-36450DC4086B/d/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `block in with_mixin'
 /private/var/folders/gv/4_5p89ws5mqfpj074nbw7fzc0000gn/T/AppTranslocation/C553764E-78C3-4A05-B22A-36450DC4086B/d/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
@@ -48,10 +48,9 @@ Backtrace:
 /private/var/folders/gv/4_5p89ws5mqfpj074nbw7fzc0000gn/T/AppTranslocation/C553764E-78C3-4A05-B22A-36450DC4086B/d/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:161:in `visit'
 /private/var/folders/gv/4_5p89ws5mqfpj074nbw7fzc0000gn/T/AppTranslocation/C553764E-78C3-4A05-B22A-36450DC4086B/d/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:10:in `visit'
 /private/var/folders/gv/4_5p89ws5mqfpj074nbw7fzc0000gn/T/AppTranslocation/C553764E-78C3-4A05-B22A-36450DC4086B/d/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:36:in `css_tree'
-/private/var/folders/gv/4_5p89ws5mqfpj074nbw7fzc0000gn/T/AppTranslocation/C553764E-78C3-4A05-B22A-36450DC4086B/d/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-/private/var/folders/gv/4_5p89ws5mqfpj074nbw7fzc0000gn/T/AppTranslocation/C553764E-78C3-4A05-B22A-36450DC4086B/d/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-/private/var/folders/gv/4_5p89ws5mqfpj074nbw7fzc0000gn/T/AppTranslocation/C553764E-78C3-4A05-B22A-36450DC4086B/d/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:307:in `render_with_sourcemap'
-/private/var/folders/gv/4_5p89ws5mqfpj074nbw7fzc0000gn/T/AppTranslocation/C553764E-78C3-4A05-B22A-36450DC4086B/d/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:391:in `run'
+/private/var/folders/gv/4_5p89ws5mqfpj074nbw7fzc0000gn/T/AppTranslocation/C553764E-78C3-4A05-B22A-36450DC4086B/d/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:20:in `render'
+/private/var/folders/gv/4_5p89ws5mqfpj074nbw7fzc0000gn/T/AppTranslocation/C553764E-78C3-4A05-B22A-36450DC4086B/d/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:290:in `render'
+/private/var/folders/gv/4_5p89ws5mqfpj074nbw7fzc0000gn/T/AppTranslocation/C553764E-78C3-4A05-B22A-36450DC4086B/d/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:400:in `run'
 /private/var/folders/gv/4_5p89ws5mqfpj074nbw7fzc0000gn/T/AppTranslocation/C553764E-78C3-4A05-B22A-36450DC4086B/d/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:63:in `process_result'
 /private/var/folders/gv/4_5p89ws5mqfpj074nbw7fzc0000gn/T/AppTranslocation/C553764E-78C3-4A05-B22A-36450DC4086B/d/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:52:in `parse'
 /private/var/folders/gv/4_5p89ws5mqfpj074nbw7fzc0000gn/T/AppTranslocation/C553764E-78C3-4A05-B22A-36450DC4086B/d/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:19:in `parse!'
@@ -62,4 +61,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'flex'.\A         on line 2 of /Users/violettavolkova/Praktik/chess/styles/blocks/header.scss, in `flex'\A         from line 2 of /Users/violettavolkova/Praktik/chess/styles/blocks/header.scss\A \A 1: .header {\A 2:   @include flex;\A 3:   @include widthpage;\A 4:   min-height: 80px;\A 5: \A 6:   &__logo{\A 7:   background-image: url(../images/logo.svg);"; }
+  content: "Error: Undefined mixin 'flex'.\A         on line 2 of /Users/violettavolkova/Praktik/chess/styles/blocks/button.scss, in `flex'\A         from line 2 of /Users/violettavolkova/Praktik/chess/styles/blocks/button.scss\A \A 1: .button {\A 2:   @include flex(center, center);\A 3:   @include text-btn;\A 4:   box-sizing: border-box;\A 5:   color: $color-text;\A 6:   background-color: $color-secondary;\A 7:   width: 140px;"; }
