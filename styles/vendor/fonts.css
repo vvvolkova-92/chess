@@ -1,4 +1,3 @@
-@import url(./vendor/normalize.css);
 @font-face {
   font-family: 'NotoSans';
   src: url(./fonts/NotoSans.woff) format("woff");
@@ -10,4 +9,4 @@
   font-weight: 600;
   font-style: normal; }
 
-/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=fonts.css.map */
