@@ -1,4 +1,5 @@
 .team {
+  box-sizing: border-box;
   padding: 20px 0 0 0;
   min-height: 642px;
   position: relative;
@@ -6,7 +7,9 @@
 
   &__swiper {
     height: 344px;
+    margin: 60px 0 0 0;
   }
+
   &__container {
     @include widthpage;
   }
@@ -21,7 +24,18 @@
     margin: 20px 0 0 0;
   }
 
-  &__swiper {
-    margin: 60px 0 0 0;
+  @media screen and (min-width: $tablet) {
+    min-height: 836px;
+    padding: 40px 0 0 0;
+
+    &__subtitle {
+      margin: 40px 0 0 0;
+    } 
+
+    &__swiper {
+      margin: 140px 0 0 0;
+      height: 415px;
+    }
   }
+
 }

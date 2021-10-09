@@ -7,11 +7,11 @@ Error: Undefined mixin 'flex'.
 2:   padding: 20px 0 0 0;
 3:   min-height: 344px;
 4:   @include flex;
-5:   flex-direction: column;
-6:   background-color: $color-main;
-7: 
-8:   &__text-container{
-9:     @include widthpage;
+5:   background-color: $color-main;
+6: 
+7:   &__text-container{
+8:     @include widthpage;
+9:     min-width: 280px;
 
 Backtrace:
 /Users/violettavolkova/Praktik/chess/styles/blocks/join-team.scss:4:in `flex'
@@ -64,4 +64,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'flex'.\A         on line 4 of /Users/violettavolkova/Praktik/chess/styles/blocks/join-team.scss, in `flex'\A         from line 4 of /Users/violettavolkova/Praktik/chess/styles/blocks/join-team.scss\A \A 1: .join-team {\A 2:   padding: 20px 0 0 0;\A 3:   min-height: 344px;\A 4:   @include flex;\A 5:   flex-direction: column;\A 6:   background-color: $color-main;\A 7: \A 8:   &__text-container{\A 9:     @include widthpage;"; }
+  content: "Error: Undefined mixin 'flex'.\A         on line 4 of /Users/violettavolkova/Praktik/chess/styles/blocks/join-team.scss, in `flex'\A         from line 4 of /Users/violettavolkova/Praktik/chess/styles/blocks/join-team.scss\A \A 1: .join-team {\A 2:   padding: 20px 0 0 0;\A 3:   min-height: 344px;\A 4:   @include flex;\A 5:   background-color: $color-main;\A 6: \A 7:   &__text-container{\A 8:     @include widthpage;\A 9:     min-width: 280px;"; }
