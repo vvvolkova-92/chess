@@ -4,8 +4,16 @@
   box-sizing: border-box;
   color: $color-text;
   background-color: $color-secondary;
-  width: 140px;
+  min-width: 140px;
   min-height: 30px;
   border-radius: 8px;
   text-decoration: none;
+
+}
+
+@media screen and (min-width: $tablet) {
+  .button {
+    min-width: 184px;
+    min-height: 44px;
+  }
 }
