@@ -3,10 +3,10 @@
   width: 100%;
 
   &-slide {
+    display: block;
     background-position: center;
     background-size: cover;
     max-width: 280px;
-    height: 344px;
   }
 
   &-wrapper {
@@ -34,6 +34,8 @@
   }
   
   &__pagination {
+    position: absolute;
+    bottom: 0 !important;
     transition: .3s opacity;
     transform: translate3d(0,0,0);
     z-index: 10;
@@ -64,6 +66,7 @@
     width: 100vw;
     &__pagination {
       display: none;
+      text-align: start;
     } 
   }
 

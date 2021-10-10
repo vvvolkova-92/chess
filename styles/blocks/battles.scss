@@ -1,13 +1,16 @@
 .battles {
   @include flex;
+  position: relative;
+  box-sizing: border-box;
+
   &__swiper {
-    height: 280px;
+    height: 314px;
   }
   &__container {
     @include widthpage;
     @include flex;
-    flex-direction: column;
     min-height: 652px;
+
   }
 
   &__board {
@@ -26,7 +29,4 @@
     margin: 20px 0 0 0;
   }
 
-  &__swiper {
-    height: 318px;
-  }
 }
