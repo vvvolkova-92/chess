@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAAA,QAAS;EACP,UAAU,EAAE,KAAK;EAEjB,eAAS;IACP,MAAM,EAAE,cAAc;IACtB,gBAAgB,EAAE,+BAA+B",
-"sources": ["battles.scss"],
-"names": [],
-"file": "battles.css"
-}

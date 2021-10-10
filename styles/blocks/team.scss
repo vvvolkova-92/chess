@@ -6,8 +6,8 @@
   background-color: $color-main;
 
   &__swiper {
-    height: 344px;
-    margin: 60px 0 0 0;
+    height: 382px;
+    padding: 60px 0 0 0;
   }
 
   &__container {
@@ -33,7 +33,7 @@
     } 
 
     &__swiper {
-      margin: 140px 0 0 0;
+      padding: 140px 0 0 0;
       height: 415px;
     }
   }

@@ -1,11 +1,18 @@
 .swiper {
-min-width: 280px;
-width: 100vw;
+  min-width: 280px;
+  width: 100%;
 
   &-slide {
     background-position: center;
     background-size: cover;
-    width: 280px;
+    max-width: 280px;
+    height: 344px;
+  }
+
+  &-wrapper {
+    height: 100%;
+    min-height: 314px;
+    max-height: 344px;
   }
 
   &-image {
@@ -31,7 +38,7 @@ width: 100vw;
     transform: translate3d(0,0,0);
     z-index: 10;
     width: 100%;
-    max-width: 280px;
+    height: 8px;
     line-height: 0;
     text-align: center;
   }
@@ -41,12 +48,10 @@ width: 100vw;
     text-align: center;
     margin: 20px 0 0 0;
     z-index: 100;
-    max-width: 280px;
   }
 
   &__subtitle {
     @include paragraph;
-    max-width: 280px;
     text-align: center;
     margin: 5px 0 0 0;
   }
@@ -55,11 +60,18 @@ width: 100vw;
     filter: grayscale(0); 
   }
 
-  @media screen and (min-width: $tablet) {
-    margin-right: -50px;
+  @media screen and (min-width: 340px) {
+    width: 100vw;
     &__pagination {
       display: none;
     } 
+  }
+
+  @media screen and (min-width: $tablet) {
+    height: 415px;
+  }
+
+  @media screen and (min-width: $laptop) {
 
     &-image {
       width: 320px;
@@ -68,10 +80,6 @@ width: 100vw;
 
     &-slide {
       max-width: 320px;
-    }
-
-    &__title, &__subtitle {
-      text-align: start;
     }
   }
 
