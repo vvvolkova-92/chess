@@ -10,7 +10,6 @@
   }
 
   &_style_footer{
-    margin-top: 40px;
     width: 38px;
     height: 54px;
   }
@@ -19,6 +18,10 @@
     &_style_header {
       width: 38px;
       height: 54px;
+    }
+
+    &_style_footer{
+      margin-top: 80px;
     }
   }
 }
