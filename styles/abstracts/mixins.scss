@@ -38,6 +38,12 @@
   font: $text-copy;
   color: #8E9199;
   text-align: center;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 15.1px;
+    line-height: 20px;
+  }
+
 }
 
 @mixin name {
@@ -113,6 +119,7 @@
   max-height: 104px;
   background-repeat: repeat;
   background-image: url(../images/square.svg);
+  background-size: contain;
 }
 
 @mixin intro-img {

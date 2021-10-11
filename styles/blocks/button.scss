@@ -9,9 +9,16 @@
   border-radius: 8px;
   text-decoration: none;
 
+
+
   @media screen and (min-width: $tablet) {
     min-width: 184px;
     min-height: 44px;
+
+    &_position_footer {
+      min-width: 218px;
+      min-height: 48px;
+    }
   }
 
   @media screen and (min-width: $laptop) {

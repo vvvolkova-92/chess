@@ -53,9 +53,14 @@ const battlesSwiper = new Swiper(".battles__swiper", {
       spaceBetween: 28,
       watchOverflow: true,
     },
+    1120: {
+      slidesPerView: 3,
+      spaceBetween: 65,
+      watchOverflow: true,
+    },
     1280: {
       slidesPerView: 3,
-      spaceBetween: 28,
+      spaceBetween: 80,
       watchOverflow: true,
     }
   }
