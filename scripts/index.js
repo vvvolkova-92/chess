@@ -15,7 +15,7 @@ const swiper = new Swiper(".team__swiper", {
     },
     // when window width is >= 640px
     768: {
-      slidesPerView: 2.1,
+      slidesPerView: 1.8,
       spaceBetween: 28,
       watchOverflow: true,
     },
@@ -49,7 +49,7 @@ const battlesSwiper = new Swiper(".battles__swiper", {
     },
     // when window width is >= 640px
     768: {
-      slidesPerView: 2.1,
+      slidesPerView: 1.8,
       spaceBetween: 28,
       watchOverflow: true,
     },

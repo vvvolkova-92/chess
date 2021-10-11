@@ -1,8 +1,16 @@
 .join-team {
+  box-sizing: border-box;
   padding: 20px 0 0 0;
   min-height: 344px;
-  @include flex;
   background-color: $color-main;
+
+  &__container {
+    @include flex;
+
+    width: 100%;
+    max-width: 1120px;
+    margin: 0 auto;
+  }
 
   &__text-container{
     @include widthpage;
@@ -30,12 +38,13 @@
 
   @media screen and (min-width: $tablet) {
     padding: 0;
-    min-height: 460px;
-    flex-direction: row-reverse;
-    justify-content: start;
+    &__container {
+      flex-direction: row-reverse;
+      min-height: 460px;
+    }
 
     &__image {
-      flex-basis: 420px;
+      flex-basis: 530px;
       background-image: url(../images/join-image-768.svg);
       background-position:unset;
       min-height: 360px;
@@ -43,10 +52,15 @@
     }
 
     &__text-container {
+      margin: 0;
+    }
+
+    &__title {
       max-width: 478px;
     }
 
     &__subtitle {
+      max-width: 478px;
       margin: 40px 0 0 0;
     }
   }
