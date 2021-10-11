@@ -12,12 +12,6 @@
     max-width: 280px;
   }
 
-  // &-wrapper {
-  //   height: 100%;
-  //   min-height: 314px;
-  //   max-height: 344px;
-  // }
-
   &-image {
     display: block;
     width: 280px;
@@ -67,6 +61,7 @@
 
   @media screen and (min-width: 340px) {
     width: 100vw;
+    
     &__pagination {
       display: none;
       text-align: start;
@@ -75,6 +70,10 @@
 
   @media screen and (min-width: $tablet) {
     height: 415px;
+  }
+
+  @media screen and (min-width: 1120px) {
+    width: 100%;
   }
 
   @media screen and (min-width: $laptop) {

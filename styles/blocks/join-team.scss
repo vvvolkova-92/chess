@@ -38,7 +38,6 @@
       flex-basis: 420px;
       background-image: url(../images/join-image-768.svg);
       background-position:unset;
-
       min-height: 360px;
       margin-left: -180px;
     }
@@ -52,7 +51,14 @@
     }
   }
 
+  @media screen and (min-width: $laptop) {
+    min-height: 560px;
 
-
-
+    &__image {
+      height: 440px;
+      flex-basis: 940px;
+      background-image: url(../images/join-image-1024.svg);
+      margin-left: -220px;
+    }
+  }
 }

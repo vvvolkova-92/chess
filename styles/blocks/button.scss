@@ -9,11 +9,13 @@
   border-radius: 8px;
   text-decoration: none;
 
-}
-
-@media screen and (min-width: $tablet) {
-  .button {
+  @media screen and (min-width: $tablet) {
     min-width: 184px;
     min-height: 44px;
+  }
+
+  @media screen and (min-width: $laptop) {
+    min-width: 218px;
+    min-height: 48px;
   }
 }
