@@ -6,7 +6,7 @@
 
   &__container {
     @include flex;
-
+    min-height: 324px;
     width: 100%;
     max-width: 1120px;
     margin: 0 auto;
@@ -46,7 +46,7 @@
     &__image {
       flex-basis: 530px;
       background-image: url(../images/join-image-768.svg);
-      background-position:unset;
+      background-position: unset;
       min-height: 360px;
       margin-left: -180px;
     }
