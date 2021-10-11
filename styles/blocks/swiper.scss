@@ -1,18 +1,15 @@
 .swiper {
   min-width: 280px;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
   &-slide {
+    display: block;
     background-position: center;
     background-size: cover;
     max-width: 280px;
-    height: 344px;
-  }
-
-  &-wrapper {
-    height: 100%;
-    min-height: 314px;
-    max-height: 344px;
   }
 
   &-image {
@@ -34,6 +31,8 @@
   }
   
   &__pagination {
+    // position: absolute;
+    // bottom: 0 !important;
     transition: .3s opacity;
     transform: translate3d(0,0,0);
     z-index: 10;
@@ -62,13 +61,19 @@
 
   @media screen and (min-width: 340px) {
     width: 100vw;
+    
     &__pagination {
       display: none;
+      text-align: start;
     } 
   }
 
   @media screen and (min-width: $tablet) {
     height: 415px;
+  }
+
+  @media screen and (min-width: 1120px) {
+    width: 100%;
   }
 
   @media screen and (min-width: $laptop) {
