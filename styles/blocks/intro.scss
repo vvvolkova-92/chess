@@ -155,4 +155,25 @@
       margin-right: 0;
     }
   }
+
+  @media screen and (min-width: $desktop) {
+    padding: 26px 0 80px 0;
+
+    &__header {
+      margin: 0 0 26px 0;
+    }
+
+    &__header-text {
+      min-width: 154px;
+      margin: 0 50px 0 0;
+    }
+
+    &__label {
+      margin-top: 35px;
+    }
+
+    &__image {
+      align-self: start;
+    }
+  }
 }

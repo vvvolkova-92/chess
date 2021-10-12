@@ -72,7 +72,21 @@
       height: 440px;
       flex-basis: 940px;
       background-image: url(../images/join-image-1024.svg);
+      background-position: center right;
       margin-left: -220px;
     }
   }
+
+  @media screen and (min-width: $desktop) {
+
+    &__container {
+      min-height: 560px;
+    }
+
+    &__title, &__subtitle {
+      max-width: 520px;
+      padding-left: 100px;
+    }
+  }
+
 }
