@@ -1,7 +1,7 @@
 .intro {
   @include widthpage;
   box-sizing: border-box;
-  padding: 19px 0 0 0;
+  padding: 16px 0 0 0;
   position: relative;
   display: grid;
   align-items: start;
@@ -20,7 +20,7 @@
     flex-direction: row;
     width: 100%;
     min-width: 280px;
-    margin: 0 0 43px 0;
+    margin: 0 0 40px 0;
     grid-area: header;
   }
 
@@ -39,6 +39,7 @@
   &__label {
     grid-area: label;
     justify-self: start;
+    align-self: center;
     @include text-label;
     @include flex (center, center);
     width: 63px;
@@ -59,7 +60,7 @@
 
   &__board {
     grid-area: board;
-    margin: 110px 0 0 0;
+    margin: 110px 0 20px 0;
   }
 
   &__title {
@@ -87,7 +88,16 @@
 
     &__header-text {
       display: block;
+      min-width: 135px;
       margin: 0 30px 0 0;
+      background-image: url(../images/arrow.svg);
+      background-size: 10.07 12.81;
+      background-position: right;
+      background-repeat: no-repeat;
+    }
+
+    &__header {
+      margin: 0 0 60px 0;
     }
 
     &__title {
@@ -102,6 +112,7 @@
       min-width: 260px;
       min-height: 520px;
       align-self: end;
+      margin-right: -180px;
     }
 
     &__board {
@@ -115,6 +126,7 @@
       height: 50px;
     }
   }
+
   @media screen and (min-width: $laptop) {
     padding: 30px 0 124px 0;
     grid-template-areas: "header header"
@@ -141,6 +153,27 @@
       height: 640px;
       width: 640px;
       margin-right: 0;
+    }
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding: 26px 0 80px 0;
+
+    &__header {
+      margin: 0 0 26px 0;
+    }
+
+    &__header-text {
+      min-width: 154px;
+      margin: 0 50px 0 0;
+    }
+
+    &__label {
+      margin-top: 35px;
+    }
+
+    &__image {
+      align-self: start;
     }
   }
 }

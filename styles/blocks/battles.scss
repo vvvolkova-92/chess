@@ -41,6 +41,11 @@
   }
 
   @media screen and (min-width: $tablet) {
+
+    &__container-text {
+      width: 100%;
+    }
+
     &__swiper {
       height: 320px;
     }
@@ -48,10 +53,12 @@
     &__title {
       margin: 50px 0 0 0;
       text-align: left;
+      max-width: 500px;
     }
 
     &__subtitle {
-      margin: 40px 0 0 0;
+      margin: 40px 0 30px 0;
+      max-width: 500px;
     }
 
     &__container {
@@ -59,9 +66,9 @@
     }
 
     &__board {
-      margin: 0;
+      margin-bottom: 80px;
       min-height: 104px;
-      align-self: center;
+      align-self: flex-end;
     }
 
     &__image {
@@ -80,10 +87,6 @@
   @media screen and (min-width: $laptop) {
     &__title {
       margin: 80px 0 0 0;
-    }
-
-    &__container-text {
-      width: 100%;
     }
 
     &__container {
