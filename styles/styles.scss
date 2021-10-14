@@ -1,8 +1,9 @@
 @import url(https://unpkg.com/swiper/swiper-bundle.min.css);
-@import "./vendor/normalize.css";
-@import "./vendor/fonts";
+@import "../vendor/normalize";
+@import "../vendor/fonts";
 @import "./abstracts/variables";
 @import "./abstracts/mixins";
+@import "./blocks/header";
 @import "./blocks/title";
 @import "./blocks/subtitle";
 @import "./blocks/board";
@@ -16,3 +17,5 @@
 @import "./blocks/button";
 @import "./blocks/swiper";
 @import "./blocks/logo";
+@import "./blocks/registration-window";
+@import "./blocks/form";

@@ -1,0 +1,18 @@
+.form {
+  @include flex (center, center);
+
+  &__item {
+    box-sizing: border-box;
+    outline: none;
+    font: $text-registration;
+    background-color: $color-reg-input;
+    min-width: 100%;
+    max-height: 42px;
+    margin: 40px 0 0 0;
+    padding: 0 0 10px 0;
+
+  &__item:first-of-type {
+      margin: 0;
+    }
+  }
+}

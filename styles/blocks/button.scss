@@ -1,4 +1,5 @@
 .button {
+  all: unset;
   @include flex(center, center);
   @include text-btn;
   box-sizing: border-box;
@@ -7,9 +8,7 @@
   min-width: 140px;
   min-height: 30px;
   border-radius: 8px;
-  text-decoration: none;
-
-
+  cursor: pointer;
 
   @media screen and (min-width: $tablet) {
     min-width: 184px;
@@ -24,5 +23,10 @@
   @media screen and (min-width: $laptop) {
     min-width: 218px;
     min-height: 48px;
+  }
+
+  &:hover {
+    background-color: $color-active-btn;
+    transition: background-color ease-in-out .3s;
   }
 }

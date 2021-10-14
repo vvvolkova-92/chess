@@ -1,10 +1,11 @@
 const swiper = new Swiper(".team__swiper", {
   grabCursor: true,
+  loop: true,
   pagination: {
     el: ".swiper__pagination",
     clickable: true,
     bulletClass: "swiper__bullet",
-    bulletActiveClass: "swiper__bullet-active",
+    bulletActiveClass: "swiper__bullet_active",
   },
   breakpoints: {
     320: {slidesPerView: 1},
@@ -34,11 +35,12 @@ const swiper = new Swiper(".team__swiper", {
 
 const battlesSwiper = new Swiper(".battles__swiper", {
   grabCursor: true,
+  loop: true,
   pagination: {
     el: ".swiper__pagination",
     clickable: true,
     bulletClass: "swiper__bullet",
-    bulletActiveClass: "swiper__bullet-active",
+    bulletActiveClass: "swiper__bullet_active",
   },
   breakpoints: {
     320: {slidesPerView: 1},

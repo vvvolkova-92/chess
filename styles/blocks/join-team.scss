@@ -79,6 +79,10 @@
 
   @media screen and (min-width: $desktop) {
 
+    &__image {
+      max-width: 660px;
+    }
+
     &__container {
       min-height: 560px;
     }

@@ -5,34 +5,77 @@
   flex-direction: column;
   justify-content: space-between;
 
+  &-wrapper {
+    margin: 0;
+    padding: 0;
+  }
+
   &-slide {
+    @include list;
     display: block;
     background-position: center;
     background-size: cover;
     max-width: 280px;
-  }
+  
+    &__image {
+      display: block;
+      width: 280px;
+      height: 280px;
+      object-fit: cover;
+      object-position: top center;
+      filter: grayscale(100%);
+      border-radius: 15px;
+    }
 
-  &-image {
-    display: block;
-    width: 280px;
-    height: 280px;
-    object-fit: cover;
-    object-position: top center;
-    filter: grayscale(100%);
-    border-radius: 15px;
+    &__title {
+      @include name;
+      text-align: center;
+      margin: 20px 0 0 0;
+      z-index: 100;
+    }
+  
+    &__subtitle {
+      @include paragraph;
+      text-align: center;
+      margin: 5px 0 0 0;
+    }
+
+    &__image:hover {
+      filter: grayscale(0); 
+    }
+
+    @media screen and (min-width: $tablet) {
+      max-width: 320px;
+
+      &__title, &__subtitle {
+        text-align: left;
+      }
+  
+      &__title {
+        margin: 30px 0 0 0;
+      }
+    
+      &__subtitle {
+        margin: 10px 0 0 0;
+      }
+  
+      &-image {
+        width: 320px;
+        height: 320px;
+      }
+    }
+  
   }
 
   &__bullet {
     @include bullet;
   }
   
-  &__bullet-active {
+  &__bullet_active {
     @include bullet-active;
   }
   
   &__pagination {
-    // position: absolute;
-    // bottom: 0 !important;
     transition: .3s opacity;
     transform: translate3d(0,0,0);
     z-index: 10;
@@ -42,22 +85,6 @@
     text-align: center;
   }
 
-  &__title {
-    @include name;
-    text-align: center;
-    margin: 20px 0 0 0;
-    z-index: 100;
-  }
-
-  &__subtitle {
-    @include paragraph;
-    text-align: center;
-    margin: 5px 0 0 0;
-  }
-
-  &-image:hover {
-    filter: grayscale(0); 
-  }
 
   @media screen and (min-width: 340px) {
     width: 100vw;
@@ -66,30 +93,6 @@
       display: none;
       text-align: start;
     } 
-  }
-
-  @media screen and (min-width: $tablet) {
-
-    &__title, &__subtitle {
-      text-align: left;
-    }
-
-    &__title {
-      margin: 30px 0 0 0;
-    }
-  
-    &__subtitle {
-      margin: 10px 0 0 0;
-    }
-
-    &-image {
-      width: 320px;
-      height: 320px;
-    }
-
-    &-slide {
-      max-width: 320px;
-    }
   }
 
   @media screen and (min-width: 1120px) {
