@@ -17,7 +17,7 @@
       <div class="logo logo_style_header"></div>
       <div class="header__registration">
         <p class="header__reg-text">Вступайте в клуб</p>
-        <button class="button" type="button">Зарегистрироваться</button>
+        <button class="button button_position_header" type="button">Зарегистрироваться</button>
       </div>
     </div>
   </header>
@@ -104,18 +104,24 @@
       <p class="footer__copy">&#169; Chees Club.</p>
     </div>
   </footer>
-  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-  <script src="./scripts/index.js"></script>
   <div class="registration-window">
     <div class="registration-window__container">
       <div class="logo logo_style_header"></div>
       <h3 class="registration-window__title">Регистрация</h3>
       <form action="index.html" method="post" class="form" name="window-registration">
-        <input class="form__item" placeholder="Имя" required type="text">
-        <input class="form__item" placeholder="Email" required type="email"> 
-        <button type="submit" class="button">Зарегистрироваться</button>
+        <div class="form__input-container">
+          <input class="form__item" placeholder="Имя" required type="text">
+          <input class="form__item" placeholder="Email" required type="email"> 
+        </div>
+        <div class="form__button-container">
+          <button type="submit" class="button button_position_reg-form">Зарегистрироваться</button>
+          <button type="reset" class="button button_position_reg-form button_type_cancel">Отмена</button>
+        </div>
+
       </form>
     </div>
   </div>
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <script src="./scripts/index.js"></script>
 </body>
 </html>

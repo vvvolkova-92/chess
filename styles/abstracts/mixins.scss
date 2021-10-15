@@ -149,3 +149,10 @@
   // padding: 0;
   text-decoration: none;
 }
+
+@mixin placeholder {
+  font-weight: normal;
+  color: $color-text;
+  font: $text-placeholder;
+  letter-spacing: 0.01em;
+}

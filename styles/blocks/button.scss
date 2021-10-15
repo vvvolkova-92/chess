@@ -18,11 +18,21 @@
       min-width: 218px;
       min-height: 48px;
     }
+
+    &_position_reg-form {
+      min-width: 218px;
+      min-height: 48px;
+    }
   }
 
   @media screen and (min-width: $laptop) {
     min-width: 218px;
     min-height: 48px;
+  }
+
+  &_type_cancel {
+    margin-top: 10px;
+    background-color: #61ccaa;
   }
 
   &:hover {
