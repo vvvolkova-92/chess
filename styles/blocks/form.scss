@@ -1,0 +1,65 @@
+.form {
+  @include flex;
+  min-height: 267px;
+  width: 100%;
+
+  &__input-container {
+    width: 100%;
+  }
+
+  &__item {
+    box-sizing: border-box;
+    margin: 10px 0 0 0;
+    outline: none;
+    font: $text-registration;
+    background-color: $color-reg-input;
+    height: 42px;
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    @include placeholder;
+    padding-left: 18px;
+  }
+
+  &__item:first-of-type {
+      margin: 0;
+  }
+
+  &__item:focus {
+    border: 1px solid $color-main;
+  }
+
+  &__item::placeholder {
+    @include placeholder;
+  }
+
+  &__item::-webkit-input-placeholder {
+    @include placeholder;
+  }
+  &__item::-moz-placeholder {
+    @include placeholder;
+    opacity: 1;
+  }
+    
+  &__item::-ms-input-placeholder {
+    @include placeholder;
+  }
+    
+  &__item:-moz-placeholder {
+    @include placeholder;
+  }
+  
+  @media screen and (min-width: $tablet) {
+    min-height: 407px;
+
+    &__item {
+      margin: 20px 0 0 0;
+      padding-left: 28px;
+      height: 48px;
+    }
+  }
+
+  @media screen and (min-width: $desktop) {
+    min-height: 417px;
+  }
+}

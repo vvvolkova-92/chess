@@ -142,3 +142,17 @@
     background-image: url(../images/intro-image-1024.svg);
   }
 }
+
+@mixin list {
+  list-style-type: none;
+  // margin: 0;
+  // padding: 0;
+  text-decoration: none;
+}
+
+@mixin placeholder {
+  font-weight: normal;
+  color: $color-text;
+  font: $text-placeholder;
+  letter-spacing: 0.01em;
+}

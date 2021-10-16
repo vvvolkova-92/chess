@@ -73,11 +73,15 @@
       flex-basis: 940px;
       background-image: url(../images/join-image-1024.svg);
       background-position: center right;
-      margin-left: -220px;
+      margin-left: -160px;
     }
   }
 
   @media screen and (min-width: $desktop) {
+
+    &__image {
+      max-width: 660px;
+    }
 
     &__container {
       min-height: 560px;
