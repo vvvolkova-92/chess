@@ -6,7 +6,7 @@ buttonRegistrationFormCancel = document.querySelector('.button_type_cancel'),
 popupRegistration = document.querySelector('.registration-window'),
 swiper = new Swiper(".team__swiper", {
   grabCursor: true,
-  loop: true,
+  // loop: true,
   pagination: {
     el: ".swiper__pagination",
     clickable: true,
@@ -20,7 +20,6 @@ swiper = new Swiper(".team__swiper", {
       spaceBetween: 18,
       watchOverflow: true,
     },
-    // when window width is >= 640px
     768: {
       slidesPerView: 1.8,
       spaceBetween: 28,
@@ -41,7 +40,7 @@ swiper = new Swiper(".team__swiper", {
 
 const battlesSwiper = new Swiper(".battles__swiper", {
   grabCursor: true,
-  loop: true,
+  // loop: true,
   pagination: {
     el: ".swiper__pagination",
     clickable: true,
@@ -55,7 +54,6 @@ const battlesSwiper = new Swiper(".battles__swiper", {
       spaceBetween: 18,
       watchOverflow: true,
     },
-    // when window width is >= 640px
     768: {
       slidesPerView: 1.8,
       spaceBetween: 28,

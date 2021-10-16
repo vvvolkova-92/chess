@@ -11,13 +11,13 @@
   height: 650px;
   min-height: 650px;
   visibility: hidden;
-  // transform: translate(0, -1020px);
-  transition: transform ease-in-out .3s;
+  transform: translateY(-1020px);
+  transition: transform ease-in-out .6s, visibility ease-in-out .3s;
 
   &_opened {
     visibility: visible;
-    transform: translate(0, 1020px);
-    transition: transform ease-in-out .3s;
+    transform: translateY(1020px);
+    transition: transform ease-in-out .6s, visibility ease-in-out .3s;
   }
 
   &__container {

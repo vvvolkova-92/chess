@@ -764,7 +764,7 @@ template {
     flex-basis: 940px;
     background-image: url(../images/join-image-1024.svg);
     background-position: center right;
-    margin-left: -220px;
+    margin-left: -160px;
   }
 }
 @media screen and (min-width: 1440px) {
@@ -1071,7 +1071,7 @@ template {
   .swiper-slide__subtitle {
     margin: 10px 0 0 0;
   }
-  .swiper-slide-image {
+  .swiper-slide__image {
     width: 320px;
     height: 320px;
   }
@@ -1150,12 +1150,13 @@ template {
   height: 650px;
   min-height: 650px;
   visibility: hidden;
-  transition: transform ease-in-out 0.3s;
+  transform: translateY(-1020px);
+  transition: transform ease-in-out 0.6s, visibility ease-in-out 0.3s;
 }
 .registration-window_opened {
   visibility: visible;
-  transform: translate(0, 1020px);
-  transition: transform ease-in-out 0.3s;
+  transform: translateY(1020px);
+  transition: transform ease-in-out 0.6s, visibility ease-in-out 0.3s;
 }
 .registration-window__container {
   margin: 0 auto;
