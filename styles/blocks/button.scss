@@ -1,0 +1,42 @@
+.button {
+  all: unset;
+  @include flex(center, center);
+  @include text-btn;
+  box-sizing: border-box;
+  color: $color-text;
+  background-color: $color-secondary;
+  min-width: 140px;
+  min-height: 30px;
+  border-radius: 8px;
+  cursor: pointer;
+
+  @media screen and (min-width: $tablet) {
+    min-width: 184px;
+    min-height: 44px;
+
+    &_position_footer {
+      min-width: 218px;
+      min-height: 48px;
+    }
+
+    &_position_reg-form {
+      min-width: 218px;
+      min-height: 48px;
+    }
+  }
+
+  @media screen and (min-width: $laptop) {
+    min-width: 218px;
+    min-height: 48px;
+  }
+
+  &_type_cancel {
+    margin-top: 10px;
+    background-color: #61ccaa;
+  }
+
+  &:hover {
+    background-color: $color-active-btn;
+    transition: background-color ease-in-out .3s;
+  }
+}

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Шахматный клуб">
+  <meta name="keywords" content="увлечения,шахматы,вид спорта,шахматный клуб">
+  <meta name="author" content="Vilo4ka">
+  <link rel="stylesheet" href="./styles/styles.css">
+  <title>Шахматный клуб в Москве</title>
+</head>
+<body class="body">
+  <!-- вынесла в хедер лого и кнопку регистрации -->
+  <header class="header">
+    <div class="header__container">
+      <div class="logo logo_style_header"></div>
+      <div class="header__registration">
+        <p class="header__reg-text">Вступайте в клуб</p>
+        <button class="button button_position_header" type="button">Зарегистрироваться</button>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <section class="intro">
+      <div class="intro__label"><p class="intro__label-text">клуб</p></div>
+      <div class="intro__image"></div>
+      <h1 class="intro__title title">Правильные шахматы</h1>
+      <p class="subtitle intro__subtitle">Приходите к нам, играть в шахматы! Сразитесь классическом поединке, блиц состязании и бою с гройсмейстером.</p>
+      <div class="board intro__board"></div>
+    </section>
+    <section class="team">
+      <div class="team__container">
+        <h2 class="title team__title">Наша команда</h2>
+        <p class="subtitle team__subtitle">Лучшие шахматисты и шахматистки любители России, гройсмейстеры, с ними играть — одно удовольствие!</p>
+      <!-- слайдер -->
+        <div class="swiper team__swiper">
+          <ul class="swiper-wrapper">
+            <li class="swiper-slide">
+              <img src="./images/slider-team/slider-photo-1.jpg" class="swiper-slide__image" alt="фото в слайдере">
+              <p class="swiper-slide__title">Андрей</p>
+              <p class="swiper-slide__subtitle">Шахматист, писатель.</p>
+            </li>
+            <li class="swiper-slide">
+              <img src="./images/slider-team/slider-photo-2.jpg" class="swiper-slide__image" alt="фото в слайдере">
+              <p class="swiper-slide__title">Никита</p>
+              <p class="swiper-slide__subtitle">Шахматист, кулинар.</p>
+            </li>
+            <li class="swiper-slide">
+              <img src="./images/slider-team/slider-photo-3.jpg" class="swiper-slide__image" alt="фото в слайдере">
+              <p class="swiper-slide__title">Алексей</p>
+              <p class="swiper-slide__subtitle">Шахматист, геймер.</p>
+            </li>         
+          </ul>
+          <div class="swiper__pagination"></div>
+        </div>
+      </div>
+      
+    </section>
+    <section class="join-team">
+      <div class="join-team__container">
+        <div class="join-team__text-container">
+          <h2 class="title join-team__title">Хочешь в&nbsp;комаду?</h2>
+          <p class="subtitle join-team__subtitle">Свяжись с нами и мы обсудим все детали присоеденения к команде.</p>
+        </div>
+        <div class="join-team__image"></div>
+      </div>
+
+    </section>
+    <section class="battles">
+      <div class="battles__container">
+        <div class="battles__container-text">
+          <h2 class="title battles__title">Сражения</h2>
+          <p class="subtitle battles__subtitle">Сражайтесь в парах и приятно проводите время. Если хотите прокачать свои навыки — сыграйте с нашими шахматистами.</p>
+        </div>
+      <!-- слайдер -->
+        <div class="swiper battles__swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./images/slider-battles/slider-photo-1.jpg" class="swiper-slide__image" alt="фото в слайдере">
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/slider-battles/slider-photo-2.jpg" class="swiper-slide__image" alt="фото в слайдере">
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/slider-battles/slider-photo-3.jpg" class="swiper-slide__image" alt="фото в слайдере">
+            </div>         
+          </div>
+          <div class="swiper__pagination"></div>
+        </div>
+        <div class="battles__wrapper">
+          <div class="battles__image"></div>
+          <div class="board battles__board"></div>
+        </div>
+      </div>
+      
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="logo logo_style_footer"></div>
+    <button class="button button_position_footer" type="button">Зарегистрироваться</button>
+    <div class="footer__copy-container">
+      <p class="footer__club-name">Шахматный клуб в Москве.</p>
+      <p class="footer__copy">&#169; Chees Club.</p>
+    </div>
+  </footer>
+  <div class="registration-window">
+    <div class="registration-window__container">
+      <div class="logo logo_style_header"></div>
+      <h3 class="registration-window__title">Регистрация</h3>
+      <form action="index.html" method="post" class="form" name="window-registration">
+        <div class="form__input-container">
+          <input class="form__item" placeholder="Имя" required type="text">
+          <input class="form__item" placeholder="Email" required type="email"> 
+        </div>
+        <div class="form__button-container">
+          <button type="submit" class="button button_position_reg-form">Зарегистрироваться</button>
+          <button type="reset" class="button button_position_reg-form button_type_cancel">Отмена</button>
+        </div>
+
+      </form>
+    </div>
+  </div>
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <script src="./scripts/index.js"></script>
+</body>
+</html>

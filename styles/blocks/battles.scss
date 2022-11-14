@@ -1,0 +1,107 @@
+.battles {
+  @include flex;
+  position: relative;
+  box-sizing: border-box;
+
+  &__swiper {
+    height: 314px;
+  }
+
+  &__container {
+    @include widthpage;
+    @include flex;
+    min-height: 652px;
+  }
+
+  &__board {
+    background-image: url(../images/square_green.svg);
+    margin: 0 0 20px 0;
+  }
+
+  &__title {
+    min-width: 280px;
+    width: 100%;
+    word-wrap: break-word;
+    margin: 20px 0 0 0;
+  }
+
+  &__subtitle {
+    margin: 20px 0 0 0;
+    max-width: 500px;
+  }
+
+  &__wrapper {
+    width: 100%;
+    @include flex;
+    flex-direction: row;
+  }
+
+  &__image {
+    display: none;
+  }
+
+  @media screen and (min-width: $tablet) {
+
+    &__container-text {
+      width: 100%;
+    }
+
+    &__swiper {
+      height: 320px;
+    }
+
+    &__title {
+      margin: 50px 0 0 0;
+      text-align: left;
+      max-width: 500px;
+    }
+
+    &__subtitle {
+      margin: 40px 0 30px 0;
+      max-width: 500px;
+    }
+
+    &__container {
+      min-height: 1015px;
+    }
+
+    &__board {
+      margin-bottom: 80px;
+      min-height: 104px;
+      align-self: flex-end;
+    }
+
+    &__image {
+      flex-basis: 522px;
+      align-self: center;
+      display: block;
+      background-repeat: no-repeat;
+      background-image: url(../images/battles-image-768.svg);
+      width: 440px;
+      height: 220px;
+      margin-left: -270px;
+    }
+
+  }
+
+  @media screen and (min-width: $laptop) {
+    &__title {
+      margin: 80px 0 0 0;
+    }
+
+    &__container {
+      min-height: 985px;
+    }
+
+    &__image {
+      margin-left: -60px;
+    }
+
+    &__wrapper {
+      align-items: center;
+    }
+
+  }
+
+
+}

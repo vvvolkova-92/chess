@@ -1,0 +1,51 @@
+.team {
+  box-sizing: border-box;
+  padding: 20px 0 0 0;
+  min-height: 642px;
+  position: relative;
+  background-color: $color-main;
+
+  &__swiper {
+    height: 382px;
+    padding: 60px 0 0 0;
+  }
+
+  &__container {
+    @include widthpage;
+  }
+
+  &__title {
+    min-width: 280px;
+    width: 100%;
+    word-wrap: break-word;
+  }
+
+  &__subtitle {
+    margin: 20px 0 0 0;
+    max-width: 500px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    min-height: 836px;
+    padding: 50px 0 0 0;
+
+    &__subtitle {
+      margin: 40px 0 0 0;
+    } 
+
+    &__swiper {
+      padding: 140px 0 0 0;
+      height: 415px;
+    }
+  }
+
+  @media screen and (min-width: $laptop) {
+    padding: 80px 0 0 0;
+    min-height: 866px;
+
+    &__swiper {
+      padding: 110px 0 0 0;
+    }
+  }
+  
+}

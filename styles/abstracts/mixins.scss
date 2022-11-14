@@ -1,0 +1,158 @@
+@mixin widthpage{
+  margin: 0 auto;
+  width: calc(100% - 40px);
+  max-width: 1120px;
+
+  @media screen and (min-width: $tablet) {
+  width: calc(100% - 100px);
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: calc(100% - 320px);
+  }
+}
+
+@mixin block-title {
+  font: $text-title;
+  color: $color-text;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 70px;
+    line-height: 90%;
+  }
+
+}
+
+@mixin paragraph {
+  font: $text-paragraph;
+  color: $color-text;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 20px;
+    line-height: 130%;
+  }
+
+}
+
+@mixin text-copy {
+  font: $text-copy;
+  color: #8E9199;
+  text-align: center;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 15.1px;
+    line-height: 20px;
+  }
+
+}
+
+@mixin name {
+  font: $text-name;
+  color: $color-text;
+  letter-spacing: 0.055em;
+  text-transform: uppercase;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 22px;
+    line-height: 130%;
+  }
+
+}
+
+@mixin text-btn {
+  font: $text-btn;
+  color: $color-text;
+  letter-spacing: 0.01em;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 13px;
+    line-height: 18px;
+  }
+
+  @media screen and (min-width: $laptop) {
+    font-size: 15px;
+    line-height: 18px;
+  }
+}
+
+@mixin text-label {
+  font: $text-label;
+  color: $color-text;
+  text-transform: uppercase;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+  @media screen and (min-width: $tablet) {
+    font-size: 16px;
+    line-height: 90%;
+  }
+
+}
+
+@mixin flex ($align: center, $justify: space-between) {
+  display: flex;
+  flex-direction: column;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin backgroung-img {
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@mixin bullet {
+  background-origin: padding-box;
+  cursor: pointer;
+  display: inline-block;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+  width: 8px;
+  height: 8px;
+  margin: 0 5px 0 5px;
+}
+
+@mixin bullet-active {
+  background-color: rgba(255, 255, 255, 1);
+}
+
+@mixin board {
+  min-width: 280px;
+  min-height: 70px;
+  background-repeat: repeat;
+  background-image: url(../images/square.svg);
+  background-size: contain;
+
+  @media screen and (min-width: $tablet) {
+    min-width: 416px;
+    min-height: 104px;
+  }
+
+}
+
+@mixin intro-img {
+  @include backgroung-img;
+  background-image: url(../images/intro-image-320.svg);
+  
+  @media screen and (min-width: $tablet){
+    background-image: url(../images/intro-image-768.svg);
+  }
+
+  @media screen and (min-width: $laptop){
+    background-image: url(../images/intro-image-1024.svg);
+  }
+}
+
+@mixin list {
+  list-style-type: none;
+  // margin: 0;
+  // padding: 0;
+  text-decoration: none;
+}
+
+@mixin placeholder {
+  font-weight: normal;
+  color: $color-text;
+  font: $text-placeholder;
+  letter-spacing: 0.01em;
+}

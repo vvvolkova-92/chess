@@ -1,0 +1,31 @@
+.footer {
+  @include flex(center,space-evenly);
+  min-height: 282px;
+  background-color: $color-main;
+
+  &__club-name {
+    @include paragraph;
+    margin: 0;
+  }
+
+  &__copy{
+    @include text-copy;
+    margin: 10px 0 0 0;
+  }
+
+  @media screen and (min-width: $tablet) {
+    min-height: 448px;
+    justify-content: space-between;
+
+    &__copy{
+      @include text-copy;
+      margin: 20px 0 0 0;
+    }
+
+    &__copy-container {
+      margin-bottom: 80px;
+    }
+  }
+
+  @media screen and (min-width: $laptop) {}
+}

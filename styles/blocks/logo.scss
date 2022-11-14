@@ -1,0 +1,27 @@
+.logo {
+  background-image: url(../images/logo.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 10;
+
+  &_style_header{
+    width: 26px;
+    height: 36px;
+  }
+
+  &_style_footer{
+    width: 38px;
+    height: 54px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    &_style_header {
+      width: 38px;
+      height: 54px;
+    }
+
+    &_style_footer{
+      margin-top: 80px;
+    }
+  }
+}
