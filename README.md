@@ -1,12 +1,12 @@
 # Учебная работа "Шахматный клуб"
 ## Работа в рамках Яндекс.Практикума
 ***
-+ Внешний вид сайта соответствует[макету EASY-01](https://www.figma.com/file/G3UWFlQmNtNs67751YiDH2/Month-of-Landings?node-id=2%3A2)
++ Внешний вид сайта соответствует [макету EASY-01](https://www.figma.com/file/G3UWFlQmNtNs67751YiDH2/Month-of-Landings?node-id=2%3A2)
 + Создана файловая структура по БЭМ
 + Адаптивная вёрстка, интерактивные элементы затемняются
 + Блоки выполнены при помощи CSS Flexbox и/или Grid CSS
 + В работе использован слайдер Swiper
-+ [Ссылка на GitHub Pages](https://saiviolet.github.io/chess/)
++ [Ссылка на GitHub Pages](https://vvvolkova-92.github.io/chess/)
 ## Добавлен функционал на JS
 + Инициализация слайдера и открытие/закрытие формы регистрации
 
